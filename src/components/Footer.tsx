@@ -67,12 +67,12 @@ export const Footer: React.FC = () => {
           </a>
           <div className="pt-1">
             <a
-              href="tel:72877666"
+              href={`tel:${RESTAURANT_INFO.whatsappDisplay}`}
               className="inline-flex items-center gap-1.5 text-[#25D366] hover:text-[#2bf578] font-bold text-xs transition-colors"
-              title="Llamar al 72877666"
+              title={`Llamar al ${RESTAURANT_INFO.whatsappDisplay}`}
             >
               <Phone className="w-3.5 h-3.5" />
-              <span>Celular: 72877666</span>
+              <span>Celular: {RESTAURANT_INFO.whatsappDisplay}</span>
             </a>
           </div>
         </div>

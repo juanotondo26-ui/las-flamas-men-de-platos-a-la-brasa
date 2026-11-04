@@ -77,12 +77,12 @@ export const Header: React.FC<HeaderProps> = ({
               </a>
               <span className="text-stone-500 hidden xs:inline">·</span>
               <a
-                href="tel:72877666"
+                href={`tel:${RESTAURANT_INFO.whatsappDisplay}`}
                 className="flex items-center gap-1.5 text-xs text-[#25D366] hover:text-[#2bf578] font-bold transition-colors"
-                title="Llamar o contactar al 72877666"
+                title={`Llamar o contactar al ${RESTAURANT_INFO.whatsappDisplay}`}
               >
                 <Phone className="w-3.5 h-3.5 shrink-0" />
-                <span>72877666</span>
+                <span>{RESTAURANT_INFO.whatsappDisplay}</span>
               </a>
             </div>
           </div>
